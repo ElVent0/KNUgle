@@ -1,0 +1,126 @@
+html,
+body,
+h1,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  color: rgb(60, 60, 60);
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      135deg,
+      rgba(237, 106, 106, 0.8) 0%,
+      rgba(255, 56, 56, 0.8) 100%
+    ),
+    url(../images/bg2-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 2px 9px 22px -3px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 2px 9px 22px -3px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 2px 9px 22px -3px rgba(0, 0, 0, 0.43);
+}
+.content__text {
+  width: 400px;
+  padding: 100px 80px 60px 80px;
+}
+.content__image {
+  background-image: url(../images/image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  border-radius: 0 5px 5px 0;
+}
+.logo {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.title {
+  margin-bottom: 20px;
+}
+.paragraph {
+  margin-bottom: 60px;
+  font-size: 14px;
+}
+.link {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  height: 40px;
+  border: 1px solid #ed6a6a;
+  color: #ed6a6a;
+  border-radius: 5px;
+  transition: 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link:hover,
+.link:focus {
+  border: 1px solid transparent;
+  background-color: #ed6a6a;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .content__text {
+    width: 320px;
+    padding: 60px 60px 40px 60px;
+  }
+  .content__image {
+    width: 300px;
+  }
+  .logo {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    display: block;
+    width: 80%;
+  }
+  .content__text {
+    padding: 60px 20px 60px 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .paragraph {
+    font-size: 12px;
+  }
+  .content__image {
+    display: none;
+  }
+  .logo {
+    width: 160px;
+    margin-bottom: 40px;
+  }
+}
